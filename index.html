@@ -28,31 +28,35 @@
         </button>
       </div>
     </header>
-
     <main id="main">
       <section id="home" class="page active">
         <div class="search-box">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input id="searchInput" type="search" placeholder="Cari layanan cleaning..." oninput="filterServices(this.value)">
         </div>
-
-        <div class="hero">
-          <div class="hero-copy">
-            <small>PROMO SPESIAL</small>
-            <h2>Sofa Bersih,<br>Rumah Lebih Nyaman</h2>
-            <p>Pesan cleaning sekarang dan dapatkan harga terbaik.</p>
-            <button class="primary-btn" onclick="startOrder('Sofa')">Pesan Sekarang <i class="fa-solid fa-arrow-right"></i></button>
-          </div>
-          <div class="hero-art">🛋️<span>✨</span></div>
-        </div>
-        <div class="dots"><i class="on"></i><i></i></div>
-
+        <section class="hero-slider">
+  <div class="hero-track">
+    <div class="hero-slide">
+      <img src="assets/kursi.png" alt="Promo Shae Cleaners">
+    </div>
+    <div class="hero-slide">
+      <img src="assets/kasur.png" alt="Promo Cuci Sofa">
+    </div>
+    <div class="hero-slide">
+      <img src="assets/jokmobil.png" alt="Promo Cuci Kasur">
+    </div>
+  </div>
+  <div class="slider-dots">
+    <span onclick="goSlide(0)" class="active"></span>
+    <span onclick="goSlide(1)"></span>
+    <span onclick="goSlide(2)"></span>
+  </div>
+</section>
         <div class="section-head">
           <div><h2>Kategori Layanan</h2><p>Pilih kebutuhan cleaning Anda</p></div>
           <button onclick="showPage('layanan')">Lihat Semua <i class="fa-solid fa-chevron-right"></i></button>
         </div>
         <div id="serviceGrid" class="service-grid"></div>
-
         <section class="why">
           <div class="section-title">
             <h2>Kenapa Shae Cleaners?</h2>
@@ -97,7 +101,7 @@
 
       <section id="notifikasi" class="page">
         <div class="page-title"><h2>Notifikasi</h2><p>Informasi terbaru untuk Anda</p></div>
-        <div class="empty-card"><div>🔔</div><h3>Belum ada notifikasi</h3><p>Notifikasi pesanan akan muncul di sini.</p></div>
+        <div class="empty-card"><div>ðŸ””</div><h3>Belum ada notifikasi</h3><p>Notifikasi pesanan akan muncul di sini.</p></div>
       </section>
     </main>
 
